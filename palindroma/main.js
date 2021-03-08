@@ -12,15 +12,10 @@ if (word == newWord) {
 }
 
 function verify(word) {
-  // The split() method is used to split a string into an array of substrings,
- // and returns the new array.
   var newWord = word.split('').reverse().join('');
-  // var singleWord = word.split('');
-  //
-  // //reverse that word u put
-  // var reverseWord = word.reverse();
-  //
-  // // join for creating new word
-  // var joinWord = word.join('');
+  // The split() method is used to split a string into an array of substrings,
+  // and returns the new array.
+  //reverse that word u put
+  // join for creating new word
   return newWord;
 }
