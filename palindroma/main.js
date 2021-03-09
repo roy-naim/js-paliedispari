@@ -5,11 +5,6 @@ var word = prompt('Inserisci una parola:');
 var newWord = verify(word);
 
 
-if (word == newWord) {
-  alert("La parola è palindroma");
-} else {
-  alert("Non e' palindroma");
-}
 
 function verify(word) {
   var newWord = word.split('').reverse().join('');
@@ -17,5 +12,10 @@ function verify(word) {
   // and returns the new array.
   //reverse that word u put
   // join for creating new word
+  if (word == newWord) {
+    alert("La parola è palindroma");
+  } else {
+    alert("Non e' palindroma");
+  }
   return newWord;
 }
